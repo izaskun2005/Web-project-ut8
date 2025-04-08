@@ -1,0 +1,155 @@
+/* inicio.css */
+body {
+    background-image: url('imagenes/20bc31bcdeda0accfa107e6813f2e1a7.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Hace que la imagen de fondo quede fija al desplazarse */
+    margin: 0; /* Elimina márgenes por defecto del body */
+    padding: 0; /* Elimina rellenos por defecto del body */
+}
+
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; /* Reducido el padding para reducir la altura */
+    position: relative;
+    height: 50px; /* Ajustado la altura del menú de navegación */
+}
+
+/* Contenedor para el logo o icono de usuario */
+.user-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-icon a {
+    color: white;
+    font-size: 18px; /* Reducido el tamaño de la fuente */
+    text-decoration: none;
+}
+
+.user-icon a:hover {
+    color: #ddd;
+}
+
+/* Estilos del contenedor de búsqueda */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Ancho del campo de búsqueda */
+}
+
+.search-container input[type="text"] {
+    padding: 6px;
+    font-size: 14px; /* Reducido el tamaño de la fuente */
+    border: 1px solid #ccc;
+    width: 80%; /* Hace que el input ocupe el 80% del espacio disponible */
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 6px 10px; /* Reducido el padding */
+    font-size: 14px; /* Reducido el tamaño de la fuente */
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-container button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos de los menús desplegables */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    font-size: 14px; /* Reducido el tamaño de la fuente */
+    padding: 10px 15px; /* Reducido el padding */
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 8px 16px; /* Reducido el padding */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Mostrar el contenido desplegable al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    display: none;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+.checkbox-container label {
+    margin-left: 5px;
+}
+.forgot-password {
+    margin-top: 10px;
+    display: block;
+}
+.social-login {
+    margin-top: 20px;
+}
+.social-login button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.google { background-color: #db4437; color: white; }
+.twitter { background-color: #1da1f2; color: white; }
+.facebook { background-color: #3b5998; color: white; }
+

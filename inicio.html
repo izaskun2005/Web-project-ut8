@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <!-- Enlazando el archivo CSS -->
+    <link rel="stylesheet" href="inicio.css">
+    <!-- Enlazando Font Awesome para usar el ícono de persona -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="login-container" id="login-todo">
+        <h2>Sign in to continue</h2>
+        <p>Not a member yet? <a href="#">Register now</a></p>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Email or Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="keep-logged-in">
+                <label for="keep-logged-in">Keep me logged in</label>
+            </div>
+            <button type="submit">LOGIN NOW</button>
+            <a href="#" class="forgot-password">Forgot your password?</a>
+        </form>
+        <p>Or sign in with</p>
+        <div class="social-login">
+            <button class="google">Google</button>
+            <button class="twitter">Twitter</button>
+            <button class="facebook">Facebook</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <!-- Icono de la persona (link para iniciar sesión/registrarse) -->
+        <form onsubmit="mostrarlogin(event)">
+            <button  >
+                <form id="login" type="submit">
+                    <i class="fas fa-user"></i>
+                </form>
+            </button>
+        </form>
+
+        <!-- Menú desplegable Hombre -->
+        <div class="dropdown">
+            <button class="dropbtn">Hombre</button>
+            <div class="dropdown-content">
+                <a class = "buscable" href="básicos.html">básicos</a>
+                <a href="#">Bañadores</a>
+                <a href="#">Jeans</a>
+                <a href="#">Pantalones</a>
+                <a href="#">Sudaderas</a>
+                <a href="#">Camisetas</a>
+                <a href="#">Polos</a>
+                <a href="#">Cazadoras y chaquetas</a>
+                <a href="#">Bermudas</a>
+                <a href="#">Zapatos</a>
+                <a href="#">Camisas</a>
+            </div>
+        </div>
+
+        <!-- Menú desplegable Mujer -->
+        <div class="dropdown">
+            <button class="dropbtn">Mujer</button>
+            <div class="dropdown-content">
+                <a class = "buscable" href="#">Sugerencias para ti</a>
+                <a class = "buscable" href="#">Novedades</a>
+                <a class = "buscable" href="#">Jeans</a>
+                <a class = "buscable" href="#">Camisetas</a>
+                <a class = "buscable" href="#">Promociones</a>
+                <a class = "buscable" href="#">Pantalones</a>
+                <a class = "buscable" href="#">Sudaderas</a>
+                <a class = "buscable" href="#">Bikinis y bañadores</a>
+                <a class = "buscable" href="#">Tops y bodies</a>
+                <a class = "buscable" href="#">Vestidos</a>
+                <a class = "buscable" href="#">Zapatos</a>
+                <a class = "buscable" href="#">Cazadoras y chaquetas</a>
+                <a class = "buscable" href="#">Faldas</a>
+                <a class = "buscable" href="#">Shorts y bermudas</a>
+                <a class = "buscable" href="#">Bolsos</a>
+                <a class = "buscable" href="#">Camisas y blusas</a>
+                <a class = "buscable" href="#">Jerséis y cárdigan</a>
+                <a class = "buscable" href="#">Total look</a>
+                <a class = "buscable" href="#">Blazers y trajes</a>
+                <a class = "buscable" href="#">Chalecos</a>
+                <a class = "buscable" href="#">Crea tu pack hasta -10%</a>
+                <a class = "buscable" href="#">Accesorios</a>
+            </div>
+        </div>
+
+        <!-- Barra de búsqueda centrada -->
+        <div class="search-container ">
+            <form id="form-busqueda" onsubmit="buscar(event)">
+                <input type="text" id="buscador" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+              </form>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="content">
+        <h2 class="store-name">Wild Threads</h2>
+        <p class="welcome-message">Selecciona una de las secciones para ver nuestras opciones.</p>
+    </div>
+
+</body>
+</html>
